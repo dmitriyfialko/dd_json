@@ -2,7 +2,7 @@ def dd_json_loads(json_str: str) -> dict or list:
     if type(json_str) != str:
         raise Exception('The passed argument is not a string')
     json_str = json_str.strip()
-    if len(json_str) == 0 or json_str[0] not in ['{', '['] or json_str[-1] not in ['}', ']']:
+    if len(json_str) == 0 or json_str[0] not in ['{', '['] end json_str[-1] not in ['}', ']']:
         raise Exception('The string is not format json')
 
     def get_elements(str_elements: str) -> list:
