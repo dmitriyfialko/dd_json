@@ -1,4 +1,4 @@
-def my_json_loads(json_str: str) -> dict or list:
+def dd_json_loads(json_str: str) -> dict or list:
     if type(json_str) != str:
         raise Exception('The passed argument is not a string')
     json_str = json_str.strip()
